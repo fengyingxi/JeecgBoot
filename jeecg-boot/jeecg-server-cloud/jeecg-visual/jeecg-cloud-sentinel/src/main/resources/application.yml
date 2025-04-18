@@ -29,7 +29,11 @@ logging:
     name: ${user.home}/logs/csp/sentinel-dashboard.log
 nacos:
   server:
-    ip: @config.server-addr@
+    ip: 127.0.0.1:8848
+    group-id: DEFAULT_GROUP
+    namespace: public
+    username: nacos
+    password: nacos
 sentinel:
   dashboard:
     version: 1.8.2

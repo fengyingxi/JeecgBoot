@@ -17,6 +17,7 @@ spring:
     allow-circular-references: true
   config:
     import:
+      - optional:nacos:jeecg.yaml
       - optional:nacos:${spring.application.name}-dev.yaml
   cloud:
     nacos:
